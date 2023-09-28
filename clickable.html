@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var area=document.createElement('h1');
+    var btn=document.createElement('button');
+    btn.id="button1";
+    btn.textContent="Switch";
+    area.innerHTML="On";
+    btn.style.backgroundColor="green";
+    btn.style.color="white";
+    btn.style.borderRadius="10px";
+    btn.style.fontSize="20px"
+    btn.addEventListener('click',function(){
+        var b=document.getElementById('button1');
+        if(area.innerHTML==="On"){
+        b.style.backgroundColor="red";
+        btn.style.color="white";
+        area.innerHTML="Off";}
+        else{
+        b.style.backgroundColor="green";
+        btn.style.color="white";
+        area.innerHTML="On";}
+    });
+    document.body.appendChild(btn);
+    document.body.appendChild(area);
+</script>
